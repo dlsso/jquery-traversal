@@ -15,7 +15,9 @@ $(document).on('ready', function() {
 		// Traverse up to find the closest '.container'
 		// then traverse down to find any '.featured' items
 		// and set the background of any results to green
-
+		$(this).closest('.container').find('.featured').css({
+			'background': 'green'
+		})
 
 
 	})
